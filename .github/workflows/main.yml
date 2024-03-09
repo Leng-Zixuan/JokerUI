@@ -1,14 +1,12 @@
 name: release
 on:
-  push:
+  pull_request:
     branches:
       - "main"
-  # pull_request:
-  #   branches:
-  #     - "main"
 
 jobs:
   build-release:
+    if: github.event.pull_request == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -33,6 +31,6 @@ jobs:
           token: ${{ secrets.JOKERUI_CI_TOKEN }}
       - name: Deploy to NPM
         run: "echo 'Deploying to NPM'"
-        # run: pnpm publish --access public
+        # run: npm publish --access public
         # env:
         #   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
