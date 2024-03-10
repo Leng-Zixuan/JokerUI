@@ -31,13 +31,20 @@ export const RightArrow = () => <svg
   <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
 </svg>
 
-<Meta title="介绍/主页" />
+<Meta title="目录/介绍" />
 
 <div className="sb-container">
   <div className='sb-section-title'>
     # Joker UI
+    <p>还在发愁为什么常见组件库的样式总是平平无奇？</p>
+    <p>还在发愁为什么常见组件库的样式总是平平无奇？</p>
+    <p>还在发愁为什么没有带有特效的组件库？</p>
+    <p>还在发愁为什么没有带有动画的组件库？</p>
+    <p>还在发愁为什么没有带有高级感特效的组件库？</p>
+    <p>那么，Joker UI 就是你的不二选择！</p>
+    <p>它是一个基于 React的超视觉特效 组件库，它提供了各种各样非主流的炫酷组件。</p>
+    <p>当然也包括了常见的组件和功能（非常炫酷），你可以在这里找到你需要的组件和功能，也可以根据自己的需求进行定制。</p>
 
-    Because Storybook works separately from your app, you'll need to configure it for your specific stack and setup. Below, explore guides for configuring Storybook with popular frameworks and tools. If you get stuck, learn how you can ask for help from our community.
   </div>
   <div className="sb-section">
     <div className="sb-section-item">
@@ -224,6 +231,11 @@ export const RightArrow = () => <svg
 
   .sb-section-title {
     margin-bottom: 32px;
+
+    p {
+      line-height: 12px;
+      font-size: 18px;
+    }
   }
 
   .sb-section a:not(h1 a, h2 a, h3 a) {
