@@ -25,18 +25,22 @@ export const Primary = {
     items: [
       {
         imgSrc: img1,
+        title: '女神',
         label: '性感清纯美女'
       },
       {
         imgSrc: img2,
+        title: '女神',
         label: '性感清纯美女',
       },
       {
         imgSrc: img3,
+        title: '女神',
         label: '性感清纯美女',
       },
       {
         imgSrc: img4,
+        title: '女神',
         label: '性感清纯美女',
       }
     ]
